@@ -27,7 +27,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Temp Screen'),
+        title: const Text('Befit app'),
       ),
       body: Center(
         child: Column(
@@ -70,7 +70,7 @@ class HomeScreen extends StatelessWidget {
                   MaterialPageRoute(builder: (context) =>  Home()),
                 );
               },
-              child: const Text('Home'),
+              child: const Text('Progress'),
             ),
             const SizedBox(height: 20),
             ElevatedButton(
