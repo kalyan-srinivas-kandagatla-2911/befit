@@ -11,7 +11,7 @@ class Register extends StatefulWidget {
 class _LState extends State<Register> {
   final Map<String, dynamic> userData = {}; // Use Map<String, dynamic> for better type safety
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-  TextEditingController _emailController = TextEditingController();
+  // TextEditingController _emailController = TextEditingController();
   TextEditingController _passwordController = TextEditingController();
   TextEditingController _repasswordController = TextEditingController();
 
@@ -79,11 +79,11 @@ class _LState extends State<Register> {
                           controller: _passwordController,
                           validator: MultiValidator([
                             RequiredValidator(errorText: 'Please enter Password'),
-                            MinLengthValidator(8, errorText: 'Password must be at least 8 characters'),
-                            PatternValidator(
-                              r'(?=.*?[#!@$%^&*-])',
-                              errorText: 'Password must contain at least one special character',
-                            ),
+                            MinLengthValidator(4, errorText: 'Password must be at least 8 characters'),
+                            // PatternValidator(
+                            //   r'(?=.*?[#!@$%^&*-])',
+                            //   errorText: 'Password must contain at least one special character',
+                            // ),
 
                           ]),
                           obscureText: true, // Use obscureText for password fields
@@ -108,11 +108,11 @@ class _LState extends State<Register> {
                           controller: _repasswordController,
                           validator: MultiValidator([
                             RequiredValidator(errorText: 'Please enter Password'),
-                            MinLengthValidator(8, errorText: 'Password must be at least 8 characters'),
-                            PatternValidator(
-                              r'(?=.*?[#!@$%^&*-])',
-                              errorText: 'Password must contain at least one special character',
-                            ),
+                            MinLengthValidator(4, errorText: 'Password must be at least 8 characters'),
+                            // PatternValidator(
+                            //   r'(?=.*?[#!@$%^&*-])',
+                            //   errorText: 'Password must contain at least one special character',
+                            // ),
                           ]),
                           obscureText: true, // Use obscureText for password fields
                           decoration: InputDecoration(
