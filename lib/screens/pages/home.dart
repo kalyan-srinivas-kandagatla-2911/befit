@@ -29,7 +29,7 @@ class _GoalPageState extends State<Home> {
                   style: TextStyle(fontSize: 20.0),
             ),
 
-            SizedBox(height: 70.0),
+            SizedBox(height: 75.0),
             Stack(
               alignment: Alignment.center,
               children: [
