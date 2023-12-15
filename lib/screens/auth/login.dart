@@ -130,7 +130,7 @@ class _LoginState extends State<Login> {
                         child: Padding(
                           padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
                           child: Text(
-                            'Already have an Account , SIGN IN',
+                            'Dont have an Account? , SIGN UP',
                             style: TextStyle(fontSize: 18, color: Colors.black),
                           ),
                         ),
